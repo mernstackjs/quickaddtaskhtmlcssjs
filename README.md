@@ -1,7 +1,8 @@
 # quickaddtaskhtmlcssjs - Task Manager Application
 
-<!-- ## Live Demo
-You can access the live version of the application at: [hhhaskhgas.cs](http://hhhaskhgas.cs) -->
+## Live Demo
+
+You can access the live version of the application at: [https://quickaddtaskhtmlcssjs.netlify.app](https://quickaddtaskhtmlcssjs.netlify.app)
 
 ## Overview
 
