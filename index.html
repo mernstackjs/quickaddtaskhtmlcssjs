@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task Manager (Quick Add Task)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <div>
-        <div class="taskform">
-          <h3>Add Task Form</h3>
-          <input id="taskInput" type="text" placeholder="Enter Your Task" />
-          <button id="taskBtn">Add Task</button>
-        </div>
-        <h1 class="taskLeng"></h1>
+      <div class="taskform">
+        <h3>Add Task</h3>
+        <input id="taskInput" type="text" placeholder="Enter Task Name" />
+        <textarea
+          id="taskDesc"
+          rows="3"
+          placeholder="Enter Task Description"
+        ></textarea>
+        <select id="taskPriority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button id="taskBtn">Add Task</button>
       </div>
-
+      <h1 class="taskLeng"></h1>
+      <div class="searchBox">
+        <input id="searchInput" type="text" placeholder="Search tasks..." />
+      </div>
       <div class="tasks"></div>
     </main>
-
     <script src="script.js"></script>
   </body>
 </html>

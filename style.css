@@ -1,49 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #333;
+}
+
 main {
   width: 100%;
   display: flex;
-  gap: 10px;
-  max-width: 1100px;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
   margin: 40px auto;
+  padding: 10px;
 }
-.taskform {
-  border: 1px solid black;
 
+.taskform {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.taskform input,
+.taskform textarea,
+.taskform select,
+.taskform button {
+  width: 100%;
+  margin-bottom: 10px;
   padding: 10px;
-  height: 120px;
+  font-size: 16px;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
+
+.taskform button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.taskform button:hover {
+  background-color: #0056b3;
+}
+
 .tasks {
-  width: 62%;
-  border: 1px solid gray;
-  padding: 10px;
-  border-radius: 5px;
-  height: 100vh;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
 }
-#taskInput,
-#taskBtn {
-  padding: 8px 12px;
-  font-size: 20px;
-}
+
 .tasks ul {
   list-style: none;
   padding: 0;
 }
 
 .tasks li {
-  background-color: #fff;
+  background-color: #f8f9fa;
   border: 1px solid #ddd;
   margin-bottom: 10px;
   padding: 10px 15px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .tasks span {
   font-weight: bold;
   color: #333;
-  margin-top: 7px;
-  display: block;
 }
 
 .tasks p {
@@ -51,14 +85,16 @@ main {
   color: #666;
 }
 
-@media (max-width: 768px) {
-  .tasks {
-    width: 100%;
-    height: auto;
-  }
+.searchBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
+@media (max-width: 768px) {
   main {
-    flex-direction: column;
-    align-items: stretch;
+    padding: 10px;
   }
 }
